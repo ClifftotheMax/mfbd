@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-05.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Modern Furniture by Design</title>
+    
+</head>
+
+<header>
+
+</header>
+
+<body>
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar-01" class="bar" style="margin: 3px"></div>
+        <div id="bar-02" class="bar" style="margin: 3px"></div>
+        <div id="bar-03" class="bar" style="margin: 3px"></div>
+        </div>    
+
+        <nav class="nav" id="nav">
+            <ul style="text-decoration: none;">
+                <li><a href="index.html" style="text-decoration: none;">HOME</a></li>
+                <li><a href="index-02.html" style="text-decoration: none;">COLLECTIONS</a></li>
+                <li><a href="index-03.html" style="text-decoration: none;">INDUSTRIAL MODERN</a></li>
+                <li><a href="index-04.html" style="text-decoration: none;">SHOWROOM</a></li>
+                <li><a href="index-06.html"style="text-decoration: none;">HISTORY</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+    <h1 class="nav-header" style="text-decoration: none;">WHERE TO BUY</h1>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    
+    
+  
+    <article>
+        <div class="table-01">
+        <table id="your-table-items">
+            <thead>
+            <tr>
+                <th>FURNITURE DESIGN</th>
+                <th>DESIGN TYPE</th>
+                <th>DIMESIONS</th>
+                <th>PRICE</th>
+                <th>WHERE TO BUY</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="./images/wtb-saarinen-dining-set-01.jpg" style="width: 100%;" alt="Saarinen Dining Set" />Saarinen Set</td>
+                <td>Modern Design</td>
+                <td>Unknown</td>
+                <td>$28,500.00</td>
+                <td><a href="https://www.bauhaus2yourhouse.com/"><u style="color:aqua;">B2H</u></a></td>
+            </tr>
+            <tr>
+                <td><img src="./images/wtb-eames-louge-chair-01 copy.jpg" style="width: 100%;" alt="Eames Lounge Chair" />Eames Lounge Chair</td>
+                <td>Modern Design</td>
+                <td>34.25" x 32.75" x 34.5"</td>
+                <td>$7,900.00</td>
+                <td><a href="https://officedesigns.com/"><u style="color:aqua;">Office Designs</u></a></td>
+            </tr>
+            <tr>
+                <td>
+                <img src="./images/wtb-barcelona-01.jpg" style="width: 100%;" alt="Barcelona Chair" />Barcelona Chair</td>
+                <td>Modern Design</td>
+                <td>30.25" x 29.5" x 30</td>
+                <td>$9,256.00</td>
+                    <td><a href="https://hivemodern.com/"><u style="color:aqua;">Hive</u></a></td>
+            </tr>
+            <tr>
+                <td>
+                <img src="./images/wtb-harmony-sofa-01.jpg" style="width: 100%;" alt="Harmony Sofa" />Harmony Sofa</td>
+                <td>Modern Design</td>
+                <td>24" x 102" x 32"</td>
+                <td>$3,872.00</td>
+                <td><a href="https://www.sohoconcept.com/"><u style="color:aqua;">Soho Concept</u></a></td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </article>
+
+
+    <!-- Click on the logo for home page? -->
+    <img class="logo-01" src="./images/mfbd-logo-white.png">
+    <img class="logo-02" src="./images/logo-icon-orange.png">
+
+        <div class="background-image"></div>
+
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script>
+    function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+    </script>
+    <script>
+    $(document).ready(function () {
+    $("table#your-table-items").tablesorter({
+      sortList: [[2, 0]],
+      CssAsc: "tablesorter-headerAsc",
+      CssDesc: "tablesorter-headerDesc"
+        });
+    });
+    </script>
+
+</body>
+<footer>
+    <div class="social">
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+    <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+    <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube"></a>        
+    </div>
+
+    <div class="about-me">
+        <a href="https://www.cliftonbuckley.com/blank-1" style="color: white;text-decoration: none; font-family: 'Times New Roman', Times, serif; letter-spacing: .9px;">About Me</a>
+    </div>
+    <h6 class="copyright" style="color: white; text-align: right; letter-spacing: .7px; font-family: 'Times New Roman', Times, serif; ">Clifton Buckley Webpage Design 2022 &copy;</h6>
+
+</footer>
+</html>
