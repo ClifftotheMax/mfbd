@@ -1,0 +1,413 @@
+body {
+    margin: 0; 
+    width: 100%; 
+    overflow: auto;     
+}
+.header-01 {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color:rgb(255, 132, 71);
+}
+
+div.a {
+  text-indent: 20px;
+}
+
+.logo-01 {
+    display: block;
+    position: fixed;
+    top: 10px;
+    width: 300px; height: 50px;
+    top: 10px; left: 1.3em;
+    padding: 10px;
+}
+
+.logo-02 {
+    display: none;
+}
+
+ul {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+}
+
+ul li {
+    display: inline;
+    padding: 10px 30px;
+    position: relative;
+    top: 10px;
+}
+
+ul li a {
+  display: inline-block;
+  color: white;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  text-decoration: none;
+} 
+
+a:hover {
+    color: gray;
+    transition: 0.5s;
+}
+
+.nav-header {
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 90px; left: 100px;
+  font-size: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Collection Images */
+.saarinen-set-01 {
+    position: fixed;
+    top: 250px; left: 300px;
+    max-width: 300px;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(255, 132, 71);
+    border-spacing: 10px;
+}
+
+.eames-louge-chair-01 {
+    position: fixed;
+    top: 600px; left: 300px;
+    width: 300px;
+    height: 300px;
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(255, 132, 71);
+    border-spacing: 10px;
+}    
+
+/* paragraphs */
+.container-01 {
+
+    position: fixed;
+    top: 250px; left: 700px;
+    margin: 10px;
+    max-width: 620px; 
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: 3px double white;
+    background-color: rgb(255, 132, 71);
+    border-width: 5px;
+    border-spacing: 10px;
+    
+}
+
+.container-02 {
+
+    position: fixed;
+    top: 590px; left: 700px;
+    margin: 10px;
+    max-width: 620px; 
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: 3px double white;
+    background-color: rgb(255, 132, 71);
+    border-width: 5px;
+    border-spacing: 10px;
+    
+}
+
+/*  Social Icons */
+.fa {
+    position: static;
+    display: inline-block;
+    padding:10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    left: 25px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+  }
+
+  .fa-youtube {
+    color: white;
+  }
+
+  .fa-instagram {
+    color: white;
+  }
+
+  .fa-pinterest {
+    color: white;
+  }
+
+.social {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    background-color: rgb(255, 132, 71);
+}
+
+.copyright {
+  position: absolute;
+  bottom: -10px; text-align: left; left: 30px;
+}
+
+.about-me {
+  position: relative;
+  text-align: right;
+ padding-right: 20px;
+ padding-top: 30px;
+}
+
+.background-image {
+    background-image: url(./images/image_02.jpg) ;
+    width: 100%;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.menu-bar {
+    display: none;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  background-color: rgb(255, 132, 71);
+  width: 100%; height: 100px;
+  bottom: 0px;
+}
+
+@media screen and (max-width: 1220px) {
+body {  
+background-color: whitesmoke;
+height: 1800px;
+}
+
+.background-image {
+    display: none;
+}
+
+header {
+    display: none;
+}
+
+
+
+/****************  hamburger menu *********************/
+#menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(255, 132, 71);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar-01 {
+    transform: translateY(-4px);
+  }
+  
+  #bar-03 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  .nav ul {
+    top: 0px;
+    padding: 0 22px;
+    line-height: 35px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    position: relative;
+    display: block;
+    top: -30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 20px 0 0px 55px;
+    background: radial-gradient(circle, rgb(255, 132, 71), rgb(255, 132, 71));
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar-01 {
+    transform: translateY(5px) rotateZ(-45deg);
+  }
+  
+  .change #bar-02 {
+    opacity: 0;
+  }
+  
+  .change #bar-03 {
+    transform: translateY(-10px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+}
+
+    .logo-01 {
+        display: none;
+    }
+
+    .logo-02  {
+        position: absolute;
+        display: block;
+        top: 5px; left: 350px;
+        width: 100px;
+    } 
+
+    ul {
+        list-style-type: none;
+        position: relative;
+        top: 45px; left: 20px;
+    }
+
+
+    .saarinen-set-01 {
+        position: absolute;
+        top: 100px; left: 18%;
+        max-width: 280px;
+        height: 300px;
+        border-style: double;
+        border-width: 5px;
+        border-color: rgb(255, 132, 71);
+        border-spacing: 10px;
+
+    }
+
+    .eames-louge-chair-01 {
+        position: absolute;
+        top: 860px; left: 18%;
+        max-width: 280px;
+        height: 300px;
+        border-style: double;
+        border-width: 5px;
+        border-color: rgb(255, 132, 71);
+        border-spacing: 10px;
+    }    
+
+.container-01 {
+    position: absolute;
+    top: 420px; left: 10px; right: 10px;
+    max-width: 100%;
+
+}
+
+.container-02 {
+    position: absolute;
+    top: 1170px; left: 10px; right: 10px; 
+    max-width: 100%;
+}
+
+
+.social {
+    position: relative;
+    bottom: -30px; text-align: center;
+}
+
+footer  {
+  display: block;
+  position: absolute;
+  background-color: rgb(255, 132, 71);
+  width: 100%; height: 100px;
+  top: 1700px;
+
+}
+
+.copyright {
+  position: absolute;
+  margin: 0; padding: 0;
+  text-align: left; bottom: 10px; right: 120px;
+}
+
+.nav-header {
+    display: block;
+    position: absolute;
+    top: 50px; left: 120px;
+    padding: 0;
+    font-size: 30px;
+    color: rgb(255, 132, 71);
+    text-shadow: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-me {
+  display: block;
+  position: absolute;
+  left: 175px; bottom: 70px;
+}
+
+h1 {
+    display: none;
+}
+}
+

@@ -1,0 +1,714 @@
+body {
+    margin: 0; 
+    overflow: auto;     
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color:rgb(255, 132, 71);
+}
+
+.logo-01 {
+    display: block;
+    position: fixed;
+    top: 10px;
+    width: 300px; height: 70px;
+    top: 10px; left: 1.3em;
+    padding: 10px;
+}
+
+.logo-02 {
+    display: none;
+}
+
+ul {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    padding: 10px 30px;
+    position: relative;
+    top: 10px;
+    text-decoration: text;
+}
+ul li a {
+    display: inline-block;
+    color: white;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+} 
+
+a:hover {
+    color: gray;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.nav-header {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 90px; left: 100px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Flip Box for Eero Saarinen */
+.flip-box {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 200px; left: 200px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+/* Flip Box for Charles and Ray Eames */
+  .flip-box-02 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 200px; left: 450px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-02 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-02:hover .flip-box-inner-02 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-02, .flip-box-back-02 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-02 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-02 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for Irving Harper */
+.flip-box-03 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 200px; left: 700px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-03 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-03:hover .flip-box-inner-03 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-03, .flip-box-back-03 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-03 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-03 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for George Nelson */
+.flip-box-04 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 200px; left: 950px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-04 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-04:hover .flip-box-inner-04 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-04, .flip-box-back-04 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-04 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-04 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for Florence Knoll */
+.flip-box-05 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 600px; left: 200px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-05 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-05:hover .flip-box-inner-05 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-05, .flip-box-back-05 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-05 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-05 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for Busk + Hertzog */
+.flip-box-06 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 600px; left: 450px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-06 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-06:hover .flip-box-inner-06 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-06, .flip-box-back-06 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-06 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-06 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for Bruno Mathsson */
+.flip-box-07 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 600px; left: 700px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-07 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-07:hover .flip-box-inner-07 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-07, .flip-box-back-07 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-07 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-07 {
+    background-color:rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/* Flip Box three for Ludwig Miles van der Rohe */
+.flip-box-08 {
+    background-color: transparent;
+    padding: 0px; 
+    position: fixed;
+    top: 600px; left: 950px;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.flip-box-inner-08 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-08:hover .flip-box-inner-08 {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front-08, .flip-box-back-08 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-front-08 {
+    background-color: #bbb;
+    color: black;
+  }
+
+.flip-box-back-08 {
+    background-color: rgb(255, 132, 71);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*  Social Icons */
+.fa {
+    position: static;
+    display: inline-block;
+    padding:10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    left: 25px;
+}
+
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-youtube {
+color: white;
+}
+
+.fa-instagram {
+color: white;
+}
+
+.fa-pinterest {
+color: white;
+}
+
+.social {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    background-color: rgb(255, 132, 71);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px; text-align: left; left: 30px;
+  }
+
+.about-me {
+    position: relative;
+    text-align: right;
+   padding-right: 20px;
+   padding-top: 30px;
+  }
+
+footer {
+    display: block;
+    position: fixed;
+    background-color: rgb(255, 132, 71);
+    width: 100%; height: 100px;
+    bottom: 0px;
+}
+
+.background-image {
+    background-image: url(./images/image_06-01.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+@media screen and (max-width: 1220px) {  
+    body {  
+        background-color: white;
+        height: 1700px;
+    }
+        
+    .background-image {
+            display: none;
+            
+    }
+    
+    header {
+            display: none;
+            background-color: white;
+    }
+        
+    /****************  hamburger menu *********************/
+    #menu {
+        z-index: 2;
+    }
+          
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: rgb(255, 132, 71);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    
+    #bar-01 {
+        transform: translateY(-4px);
+    }
+    
+    #bar-03 {
+        transform: translateY(4px);
+    }
+    
+    .nav {
+        transition: 0.3s ease;
+        display: none;
+        text-decoration: none;
+    }
+    .nav ul {
+        top: 0px;
+        padding: 0 22px;
+        line-height: 35px;
+        text-decoration: none;
+    }
+    
+    .nav li {
+        list-style: none;
+        padding: 12px 0;
+        text-decoration: none;
+    }
+    
+    .nav li a {
+        position: relative;
+        display: block;
+        top: -30px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+          
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 20px 0 0px 55px;
+        background: radial-gradient(circle, rgb(255, 132, 71), rgb(255, 132, 71));
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+        
+    .change {
+        display: block;
+    }
+        
+    .change .bar {
+        background-color: white;
+    }
+        
+    .change #bar-01 {
+        transform: translateY(5px) rotateZ(-45deg);
+    }
+        
+    .change #bar-02 {
+        opacity: 0;
+    }
+        
+    .change #bar-03 {
+        transform: translateY(-10px) rotateZ(45deg);
+    }
+        
+    .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%,-30%);
+    }
+    
+    .logo-01 {
+        display: none;
+    }
+    
+    .logo-02  {
+        position: absolute;
+        display: block;
+        top: 5px; left: 350px;
+        width: 100px;
+    } 
+    
+    ul {
+        list-style-type: none;
+        position: relative;
+        top: 45px; left: 20px;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .footer {
+        position: relative;
+        display: block;
+        height: 10px;
+        top: 0px;
+        background-color: rgb(255, 132, 71);
+        max-width: 100%;
+    }
+
+    .about-me {
+        text-align: center;
+        bottom: 65px;
+    }
+
+    .social {
+        position: relative;
+        bottom: -25px; text-align: center;
+    }
+    .copyright {
+        color: white;
+        display: block;
+        bottom: 10px; right: 120px;
+    }
+    .nav-header {
+        display: flex;
+        position: absolute;
+        top: 75px;
+        left: 130px;
+        margin: 0%;
+        padding: 0;
+        font-size: 30px;
+        color: rgb(255, 132, 71);
+        text-shadow: none;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .flip-box {
+        position: absolute;
+        display: block;
+        left: 10px;
+    }
+
+    .flip-box-02 {
+        position: absolute;
+        display: block;
+        left: 230px;
+    }
+    .flip-box-03 {
+        position: absolute;
+        display: block;
+        left: 10px; top: 550px;
+    }
+
+    .flip-box-04 {
+        position: absolute;
+        display: block;
+        left: 230px; top: 550px;
+    }
+
+    .flip-box-05 {
+        position: absolute;
+        display: block;
+        left: 10px; top: 900px;
+    }
+
+    .flip-box-06 {
+        position: absolute;
+        display: block;
+        left: 230px; top: 900px;
+    }
+    .flip-box-07 {
+        position: absolute;
+        display: block;
+        left: 10px; top: 1250px;
+    }
+
+    .flip-box-08 {
+        position: absolute;
+        display: block;
+        left: 230px; top: 1250px;
+    }
+
+
+
+
+}

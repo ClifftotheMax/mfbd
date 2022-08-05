@@ -1,0 +1,431 @@
+body {
+    margin: 0; 
+    overflow: auto;     
+}
+
+header {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color:rgb(255, 132, 71);
+}
+
+.logo-01 {
+    display: block;
+    position: fixed;
+    top: 10px;
+    width: 300px; height: 70px;
+    top: 10px; left: 1.3em;
+    padding: 10px;
+}
+
+.logo-02 {
+    display: none;
+}
+
+ul {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline;
+    padding: 10px 30px;
+    position: relative;
+    top: 10px;
+    text-decoration: text;
+}
+ul li a {
+    display: inline-block;
+    color: white;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-decoration: none;
+} 
+
+a:hover {
+    color: gray;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.nav-header {
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 90px; left: 100px;
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+/* *********************** Table ******************* */
+
+table#your-table-items {
+    border-collapse: collapse;
+    /* in inspector mode - easier to see the difference between collapse and no collapse */
+    border: 1px solid rgb(255, 132, 71);
+    text-align: center;
+    color: white;
+  }
+
+  table#your-table-items th:nth-child(1),
+  table#your-table-items td:nth-child(1) {
+    width:200px;
+  }
+
+  table#your-table-items th:nth-child(2),
+  table#your-table-items td:nth-child(2) {
+    width: 200px;
+  }
+
+  table#your-table-items th:nth-child(3),
+  table#your-table-items td:nth-child(3) {
+    width: 200px;
+  }
+
+  table#your-table-items th:nth-child(4),
+  table#your-table-items td:nth-child(4) {
+    width: 200px;
+  }
+  table#your-table-items th:nth-child(5),
+  table#your-table-items td:nth-child(5) {
+    width: 100px;
+  }
+  
+
+  table#your-table-items thead {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  table#your-table-items thead th {
+    color: #fff;
+    background-color: rgb(255, 132, 71);
+    padding: 8px;
+    text-align: center;
+  }
+
+  table#your-table-items thead th:hover {
+    color: #fff;
+    background-color: rgb(255, 190, 158);
+    cursor: pointer;
+  }
+
+  table#your-table-items thead th.tablesorter-headerAsc,
+  table#your-table-items thead th.tablesorter-headerDesc {
+    background-color: rgb(255, 190, 158)
+  }
+
+  table#your-table-items tbody {
+    font-size: .9em;
+    line-height: 15px;
+  }
+
+  /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+  /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+  table#your-table-items tbody tr:nth-child(even) {
+    background: rgba(154, 154, 154, 0.25);
+  }
+
+  table#your-table-items tbody tr:hover {
+    color: #fff;
+    background-color: rgb(255, 190, 158)
+  }
+
+  table#your-table-items tbody td {
+    padding: 8px 20px;
+    border-top: 1px solid rgb(255, 132, 71);
+    border-right: 1px solid rgb(255, 132, 71);
+  }
+
+  table#your-table-items tbody td img {
+    width: 100px;
+    margin: 0 10px 0 0;
+    border: 1px solid rgba(154, 154, 154, 0.75);
+  }
+
+  .table-01 {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    position:absolute;
+    display: block;
+    top: 200px; left: 30%;
+  }
+
+/*  Social Icons */
+.fa {
+    position: static;
+    display: inline-block;
+    padding:10px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    left: 25px;
+}
+
+  .fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    color: white;
+}
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-linkedin {
+    color: white;
+}
+
+.fa-youtube {
+color: white;
+}
+
+.fa-instagram {
+color: white;
+}
+
+.fa-pinterest {
+color: white;
+}
+
+.social {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    background-color: rgb(255, 132, 71);
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px; text-align: left; left: 30px;
+  }
+
+.about-me {
+    position: relative;
+    text-align: right;
+   padding-right: 20px;
+   padding-top: 30px;
+  }
+
+footer {
+    display: block;
+    position: fixed;
+    background-color: rgb(255, 132, 71);
+    width: 100%; height: 100px;
+    bottom: 0px;
+}
+.background-image {
+    background-image: url(./images/image_05.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1220px) {  
+    body {  
+        background-color: white;
+        height: 1000px;
+    }
+        
+    .background-image {
+            display: none;
+            
+    }
+    
+    header {
+            display: none;
+            background-color: white;
+    }
+        
+    /****************  hamburger menu *********************/
+    #menu {
+        z-index: 2;
+    }
+          
+    #menu-bar {
+        width: 45px;
+        height: 40px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+    }
+    
+    .bar {
+        height: 5px;
+        width: 100%;
+        background-color: rgb(255, 132, 71);
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+    
+    #bar-01 {
+        transform: translateY(-4px);
+    }
+    
+    #bar-03 {
+        transform: translateY(4px);
+    }
+    
+    .nav {
+        transition: 0.3s ease;
+        display: none;
+        text-decoration: none;
+    }
+    .nav ul {
+        top: 0px;
+        padding: 0 22px;
+        line-height: 35px;
+        text-decoration: none;
+    }
+    
+    .nav li {
+        list-style: none;
+        padding: 12px 0;
+        text-decoration: none;
+    }
+    
+    .nav li a {
+        position: relative;
+        display: block;
+        top: -30px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .nav li a:hover {
+        font-weight: bold;
+    }
+    
+    .menu-bg, #menu {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+          
+    .menu-bg {
+        z-index: 1;
+        width: 0;
+        height: 0;
+        margin: 20px 0 0px 55px;
+        background: radial-gradient(circle, rgb(255, 132, 71), rgb(255, 132, 71));
+        border-radius: 50%;
+        transition: 0.3s ease;
+    }
+        
+    .change {
+        display: block;
+    }
+        
+    .change .bar {
+        background-color: white;
+    }
+        
+    .change #bar-01 {
+        transform: translateY(5px) rotateZ(-45deg);
+    }
+        
+    .change #bar-02 {
+        opacity: 0;
+    }
+        
+    .change #bar-03 {
+        transform: translateY(-10px) rotateZ(45deg);
+    }
+        
+    .change-bg {
+        width: 520px;
+        height: 460px;
+        transform: translate(-60%,-30%);
+    }
+    
+    .logo-01 {
+        display: none;
+    }
+    
+    .logo-02  {
+        position: absolute;
+        display: block;
+        top: 5px; left: 350px;
+        width: 100px;
+    } 
+    
+    ul {
+        list-style-type: none;
+        position: relative;
+        top: 45px; left: 20px;
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .footer {
+        position: relative;
+        display: block;
+        height: 10px;
+        top: 0px;
+        background-color: rgb(255, 132, 71);
+        max-width: 100%;
+    }
+
+    .about-me {
+        text-align: center;
+        bottom: 65px;
+    }
+
+    .social {
+        position: relative;
+        bottom: -25px; text-align: center;
+    }
+    .copyright {
+        color: white;
+        display: block;
+        bottom: 10px; right: 120px;
+    }
+    
+    .nav-header {
+        display: flex;
+        position: absolute;
+        top: 75px;
+        left: 130px;
+        margin: 0%;
+        padding: 0;
+        font-size: 30px;
+        color: rgb(255, 132, 71);
+        text-shadow: none;
+
+    }
+
+    h1 {
+        display: none;
+    }
+
+    table#your-table-items {
+        border-collapse: collapse;
+        /* in inspector mode - easier to see the difference between collapse and no collapse */
+        border: 1px solid rgb(255, 132, 71);
+        text-align: center;
+        color: rgb(255, 132, 71);
+      }
+
+    .table-01 {
+        padding: 0 0 0 0;
+        margin: 0px;
+        left: 0px; right: 15px;
+        position:absolute;
+        display: block;
+        top: 120px;
+        
+      }
+}
